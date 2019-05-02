@@ -1,0 +1,10 @@
+.buttons_style {
+    padding: 0px 5px;
+    font-size: 12px;
+}
+.admin_groups_edit_button {
+    float: left;
+}
+.admin_groups_delete_button {
+    margin-left: 5px;
+}

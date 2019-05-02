@@ -1,0 +1,10 @@
+.search_content {
+    margin-top: 20px;
+}
+.date_from, .date_to {
+    width: 135px;
+    margin: 0 auto!important;
+}
+.toggle-content {
+    color: #333!important;
+}

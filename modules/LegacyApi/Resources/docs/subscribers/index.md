@@ -1,0 +1,1 @@
+<div class="alert alert-info">Subscribers is a way to receive updates almost instantly for Appraisal Order Updates, Appraisal Order Assignment, New Log entries etc...</div>

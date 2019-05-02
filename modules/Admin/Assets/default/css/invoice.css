@@ -1,0 +1,257 @@
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+    border: 1px solid #d7d7d7;
+}
+h1 {
+    font-size: 2.5em;
+    font-weight: 400;
+    color: #293172;
+}
+
+h2.title {
+    color: #293172;
+}
+
+h3 {
+    margin: 0;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.table-holder {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #d7d7d7;
+}
+
+.table-top-gray {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.table-top-gray th {
+    border: none;
+}
+
+.table-holder tr:first-child >* {
+    border-top: none;
+}
+
+.table-holder tr:last-child >* {
+    border-bottom: none;
+}
+
+.table-holder td:first-child {
+    border-left: none;
+}
+
+.table-holder td:last-child {
+    border-right: none;
+}
+
+.pdf-page {
+    margin: 0 auto;
+    padding: 15px;
+    max-width: 800px;
+    font-family: Sans-serif, Arial;
+    font-size: 14px;
+}
+
+.logo {
+    height: 51px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.card {
+    border: 1px solid #d7d7d7;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.card .title {
+    background: #666;
+    color: #fff;
+    padding: 10px;
+}
+
+.card .body {
+    padding: 10px;
+    font-size: 13px;
+}
+
+.card .body * {
+    padding: 3px 0;
+    font-size: 13px;
+}
+
+.sub-title {
+    font-weight: 600;
+}
+
+.content {
+    margin: 15px 0 50px;
+}
+
+.column {
+    flex-grow: 1;
+}
+
+.invoice {
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #d7d7d7;
+}
+
+.invoice table {
+    width: 100%;
+}
+
+.invoice th,
+.invoice td {
+    text-align: center;
+}
+
+.invoice td {
+    border-top: none;
+    border-right: none;
+}
+
+.invoice th {
+    border-top: none;
+    border-left: none;
+}
+
+.invoice tr:last-child >* {
+    border-bottom: none;
+}
+
+.description .title {
+    margin-bottom: 5px;
+}
+
+.description table {
+    width: 100%;
+}
+
+.description td div {
+    display: inline-block;
+}
+
+.description-text-block .sub-title {
+    margin: 10px 0 0;
+}
+
+.fees {
+    overflow: hidden;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.fees table {
+    width: 100%;
+}
+
+.fees th {
+    background: #666;
+    color: #fff;
+}
+
+.fees th:first-child {
+    text-align: left;
+}
+
+.fees td:last-child {
+    text-align: right;
+}
+
+/*footer*/
+.info-card {
+    border-radius: 5px;
+    text-align: center;
+    background: #293172;
+    margin-bottom: 30px;
+}
+
+.info-card .title {
+    color: #fff;
+    padding: 5px 50px;
+}
+
+.info-card .number {
+    font-weight: 700;
+    background: #e8e8e8;
+    margin: 1px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 10px 0;
+}
+
+.top-row {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.copyright >* {
+    display: inline-block;
+}
+
+.copyright >*:not(:first-child) {
+    border-left: 1px solid;
+    padding-left: 10px;
+}
+
+.copyright >*:not(:last-child) {
+    padding-right: 5px;
+}
+
+@media screen and (max-width: 575px) {
+
+    .header {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .logo {
+        height: 35px;
+    }
+}
+
+@media screen and (min-width: 576px) {
+
+    .content .row {
+        display: flex;
+    }
+
+    .card {
+        max-width: 80%;
+    }
+
+    .column-invoice {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+    }
+
+    .invoice {
+        width: 90%;
+    }
+}

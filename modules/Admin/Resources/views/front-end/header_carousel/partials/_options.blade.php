@@ -1,0 +1,2 @@
+<a class="btn btn-info btn-xs" data-id="{{$row->id}}" href="{{ route('admin.frontend-site.header-carousel.edit', ['id' => $row->id]) }}"><i class="fa fa-edit"></i> Edit</a>
+<a class="btn btn-danger btn-xs" href="{{ route('admin.frontend-site.header-carousel.delete', ['id' => $row->id, '_token' => csrf_token()]) }}"><i class="fa fa-trash"></i> Delete</a>

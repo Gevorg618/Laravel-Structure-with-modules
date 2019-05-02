@@ -1,0 +1,1 @@
+<p>Groups are the Clients/Companies placing the orders. Users will be associated to Groups.</p>

@@ -1,0 +1,10 @@
+.edit_btn {
+    padding: 0px 5px;
+    float: left;
+    font-size: 12px;
+    margin-right: 5px;
+}
+.delete_btn {
+    font-size: 12px;
+    padding: 0 5px;
+}

@@ -1,0 +1,10 @@
+.buttons_style {
+    padding: 0px 5px;
+    font-size: 12px;
+}
+.api_users_logs_button {
+    float: left;
+}
+.api_users_edit_button {
+    margin-left: 5px;
+}

@@ -1,0 +1,1 @@
+shipped.blade.php

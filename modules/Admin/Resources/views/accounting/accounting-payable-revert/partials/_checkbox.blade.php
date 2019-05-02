@@ -1,0 +1,1 @@
+<input type="checkbox" value="{{ $record->id }}" class="record_id_checkbox">

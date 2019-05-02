@@ -1,0 +1,15 @@
+{
+    "name": "LegacyApi",
+    "alias": "legacyapi",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\LegacyApi\\Providers\\ServiceProvider"
+    ],
+    "aliases":{},
+    "files": [
+        "start.php"
+    ]
+}

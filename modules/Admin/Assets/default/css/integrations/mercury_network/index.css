@@ -1,0 +1,18 @@
+.table {
+	margin-top: 20px;
+}
+.caption {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color: #777;
+    text-align: left;
+    font-size: 16px;
+    padding-left: 10px;
+}
+.btn-default {
+    border: 1px solid #b3b3b3;
+}
+
+.buttons_content {
+	text-align: right;
+}

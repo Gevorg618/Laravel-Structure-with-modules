@@ -1,0 +1,51 @@
+.box {
+        padding: 30px;
+        padding-left: 10px;
+        padding-bottom: 20px;
+        background-color: #7ca751;
+        margin-bottom: 10px;
+        color: #fff;
+    }
+    .box span {
+        font-size: 24px;
+        float: right;
+        display: block;
+        clear: all;
+    }
+    .box strong {
+        font-size: 20;
+        display: block;
+        width: 200px;
+        padding-top: 40px;
+        font-weight: 100;
+        text-transform: uppercase;
+        font-family: sans-serif;
+
+    }
+    .box-green {
+        background-color: #7ca751;
+    }
+    .box-light-blue {
+        background-color: #1a7c9f;
+    }
+    .box-blue {
+        background-color: #106294;
+    }
+    .caption {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .caption-desc {
+        text-align: center;
+    }
+    div.small-caption {
+        font-size: 15px;
+        text-align: left;
+        margin-bottom: 5px;
+    }
+    div.small-caption b span{
+        float: right;
+        font-weight: 100;
+        font-size: 18px;
+    }

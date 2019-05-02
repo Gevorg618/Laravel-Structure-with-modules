@@ -1,0 +1,17 @@
+/vendor
+/node_modules
+/public/storage
+/public/build
+/modules/dashboard/public/build
+/modules/dashboard/vendor
+Homestead.yaml
+Homestead.json
+.env
+.DS_Store
+.idea
+composer.lock
+package-lock.json
+yarn.lock
+yarn-error.log
+storage/worker.log
+

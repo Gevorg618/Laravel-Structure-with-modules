@@ -1,0 +1,7 @@
+[{ "id": 1, "name": "Eastern" },
+{ "id": 2, "name": "Central" },
+{ "id": 3, "name": "Mountain" },
+{ "id": 4, "name": "Pacific" },
+{ "id": 5, "name": "Alaska" },
+{ "id": 6, "name": "Hawaii" },
+{ "id": 7, "name": "Other"}]

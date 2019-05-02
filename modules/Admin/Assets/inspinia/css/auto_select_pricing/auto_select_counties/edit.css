@@ -1,0 +1,22 @@
+.counties {
+    text-align: right;
+    line-height: 30px;
+}
+.counties_content {
+    margin-left: 170px!important;
+}
+.btn_success {
+    margin-top: 50px; 
+}
+.state_name {
+    text-align: left;
+}
+.button_content {
+    text-align: center;
+}
+.county {
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+    margin-left: 10px!important;
+}

@@ -1,0 +1,10 @@
+.buttons_style {
+	padding: 0px 5px;
+	font-size: 12px;
+}
+.home_page_panels_edit_button {
+	float: left;
+}
+.home_page_panels_delete_button {
+	margin-left: 5px;
+}

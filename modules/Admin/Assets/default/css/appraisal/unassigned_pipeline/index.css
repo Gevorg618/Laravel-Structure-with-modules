@@ -1,0 +1,47 @@
+.btn-group,
+.btn-group button {
+    width: 100% !important;
+}
+
+.due-date-today {
+    color: blue !important;
+}
+
+.due-date-past {
+    color: red !important;
+}
+
+.order-has-invites {
+    color: #12a799 !important;
+}
+
+.order-purchased {
+    color: purple !important;
+}
+
+.order-reassign {
+    color: orange !important;
+}
+
+.dropdown-menu {
+    left: -130px !important;
+    color: #676a6c !important;
+}
+
+div.dataTables_wrapper div.dataTables_processing {
+    z-index: 9999;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    margin-left: -100px;
+    margin-top: -26px;
+    text-align: center;
+    padding: 0;
+    font-size: 16px;
+    color: #404040;
+}
+
+.dataTables_wrapper {
+    padding-bottom: 75px !important;
+}

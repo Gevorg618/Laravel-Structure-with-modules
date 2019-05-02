@@ -1,0 +1,163 @@
+<?php
+use App\Models\Integrations\APIUsers\APIEmailSettingContent;
+
+function getAPIEmailContentByKey($id, $key) {
+    $emailRow = APIEmailSettingContent::getAPIEmailContentByKey($id, $key);
+    $content = null;
+    if($emailRow && $emailRow->content) {
+        $content = $emailRow->content;
+    }
+    return $content;
+}
+
+
+function getPermissionList() {
+    return [
+        'actions' => [
+            'users' => [
+                'list_users' => 'List Users',
+                'add_user' => 'Add User',
+                'update_user' => 'Update User Information',
+                'view_user' => 'View User Information',
+            ],
+            'groups' => [
+                'list_groups' => 'List Groups',
+            ],
+            'orders' => [
+                'list_orders' => 'List Orders',
+                'add_order' => 'Add Order',
+                'update_order' => 'Update Order Information',
+                'view_order' => 'View Order Information',
+                'view_order_logs' => 'View Order Log Entries',
+                'add_order_log' => 'Add Order Log Entry',
+                'view_order_documents' => 'View Order Documents',
+                'add_order_document' => 'Add Order Document',
+                'view_order_statuses' => 'View Order Statuses',
+                'view_order_appr_types' => 'View Order Appraisal Types',
+                'view_order_property_types' => 'View Order Statuses',
+                'view_order_occ_status' => 'View Order Occupancy Statuses',
+                'view_order_loantype' => 'View Order Loan Types',
+                'view_order_loanpurpose' => 'View Order Loan Purpose',
+                'view_order_documenttypes' => 'View Order Document Types',
+                'view_order_addendas' => 'View Order Addendas',
+            ],
+            'subscribers' => [
+                'list_subscribers' => 'List Subscribers',
+                'add_subscribers' => 'Add Subscribers',
+                'update_subscribers' => 'Update Subscribers',
+                'remove_subscribers' => 'Remove Subscribers',
+            ],
+            'grow' => [
+                'grow_list_methods' => 'List Allowed API Calls',
+                'grow_query' => 'Query Grow API Calls'
+            ],
+        ],
+        'fields' => [
+            'users' => [
+                'id' => 'User ID',
+                'email' => 'Email Address',
+                'register_date' => 'Registered Date',
+                'active' => 'Active Status',
+                'notes' => 'User Notes',
+                'groupid' => 'Group ID',
+                'user_type' => 'User Type',
+                'firstname' => 'Firstname',
+                'lastname' => 'Last Name',
+                'phone' => 'Phone',
+                'mobile' => 'Mobile',
+                'fax' => 'Fax',
+                'address' => 'Address',
+                'city' => 'City',
+                'state' => 'State',
+                'zip' => 'Zip',
+                'comp_address' => 'Company Address',
+                'comp_city' => 'Company City',
+                'comp_state' => 'Company State',
+                'comp_zip' => 'Company Zip',
+                'company' => 'Company Name',
+            ],
+            'orders' => [
+                'id' => 'Order ID',
+                'ordereddate' => 'Ordered Date',
+                'orderedby' => 'Ordered By (Client)',
+                'acceptedby' => 'Accepted By (Appraiser)',
+                'appr_assigned' => 'Appraiser Assigned to this order',
+                'accepteddate' => 'Accepted Date (yyyy-mm-dd hh:ii:ss)',
+                'status' => 'Order Status',
+                'groupid' => 'Group ID',
+                'schd_date' => 'Scheduled Date (yyyy-mm-dd)',
+                'sched_dts' => 'scheduled Date & Time (yyyy-mm-dd hh:ii:ss)',
+                'completed' => 'Completed Date (yyyy-mm-dd hh:ii:ss)',
+                'submitted' => 'Submitted Date (yyyy-mm-dd hh:ii:ss)',
+                'propaddress1' => 'Property Address',
+                'propaddress2' => 'Property Address (Suite, APT)',
+                'propcity' => 'Property City',
+                'propstate' => 'Property State (CA, TX etc..)',
+                'propzip' => 'Property Zip',
+                'prop_type' => 'Property Type',
+                'occstatus' => 'OCC Status',
+                'loantype' => 'Loan Type',
+                'req_fha' => 'Order Requires FHA (Y/N)',
+                'fha_case' => 'FHA Case Number',
+                'loanpurpose' => 'Loan Purpose',
+                'lender_id' => 'Lender ID (must be an ID that exists in Landscape @see "order/client-options" on how to get a list of lenders available for the client placing the order)',
+                'lender' => 'Lender',
+                'lenderaddress' => 'Lender Address',
+                'lendercity' => 'Lender City',
+                'lenderstate' => 'Lender State',
+                'lenderzip' => 'Lender Zip',
+                'invoicename' => 'Invoice Name',
+                'invoiceaddress' => 'Invoice Address',
+                'invoicecity' => 'Invoice City',
+                'invoicestate' => 'Invoice State',
+                'invoicezip' => 'Invoice Zip',
+                'borrower' => 'Borrower Name',
+                'borrower_email' => 'Borrower Email',
+                'borrower_phone' => 'Borrower Phone',
+                'borrower_altphone' => 'Borrower Alternative Phone',
+                'loanrefnum' => 'Loan Reference Number',
+                'no_units' => 'Number of units',
+                'sales_contract' => 'Sales Contract (Y/N)',
+                'fax_contract' => 'Fax Contract (Y/N)',
+                'sales_price' => 'Sales Price',
+                'legal_descrip' => 'Legal Description',
+                'appr_type' => 'Appraisal Type',
+                'contactname' => 'Contact Name',
+                'contactphone' => 'Contact Phone',
+                'contactphone2' => 'Contact Alternative Phone',
+                'contactemail' => 'Contact Email',
+                'contactnotes' => 'Contact Notes',
+                'comments' => 'Comments',
+                'billmelater' => 'Bill Me Later Payment (Y/N)',
+                'split_amount' => 'Split Amount',
+                'trip_fee' => 'Trip Fee',
+                'complex_prop' => 'Complex Property (Y/N)',
+                'appr_paid' => 'Amount Paid (xx.xx)',
+                'amountdue' => 'Amount Due (xx.xx)',
+                'invoicedue' => 'Invoice Due (xx.xx)',
+                'paid_amount' => 'Paid Amount (xx.xx)',
+                'is_cod' => 'Is A COD Order (Y/N)',
+                'payment_method' => 'Payment Method',
+
+                // Support & Status Emails
+                'additional_email' => 'Additional Emails (one per line)',
+                'final_report_emails' => 'Final Report Emails (one per line)',
+                'add_email_status' => 'Status Emails (Y/N)',
+                'add_email_support' => 'Support Emails (Y/N)',
+
+                // Credit Card
+                'cc_name' => 'Credit Card Holders Name (Required)',
+                'cc_number' => 'Credit Card Number (Required)',
+                'cc_exp' => 'Credit Card Expiration (mmyy) (Required)',
+                'cc_cvv' => 'Credit Card Verification Code (Required)',
+                'cc_billaddress' => 'Credit Card Billing Address (Required)',
+                'cc_billcity' => 'Credit Card Billing City (Required)',
+                'cc_billstate' => 'Credit Card Billing State (Required)',
+                'cc_billzip' => 'Credit Card Billing Zip (Required)',
+                'date_delivered' => 'Date Delivered Date (yyyy-mm-dd hh:ii:ss)',
+                'fha_case_effective_date' => 'FHA Case Effective Date (yyyy-mm-dd)',
+                'is_new_construction' => 'New Construction',
+            ],
+        ],
+    ];
+}

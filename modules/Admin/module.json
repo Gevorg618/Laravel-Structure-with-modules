@@ -1,0 +1,17 @@
+{
+    "name": "Admin",
+    "alias": "admin",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 2,
+    "providers": [
+        "Modules\\Admin\\Providers\\AdminServiceProvider",
+        "Modules\\Admin\\Providers\\TicketServiceProvider"
+    ],
+    "aliases":{},
+    "files": [
+        "start.php",
+        "Helpers/AdminAssets.php"
+    ]
+}

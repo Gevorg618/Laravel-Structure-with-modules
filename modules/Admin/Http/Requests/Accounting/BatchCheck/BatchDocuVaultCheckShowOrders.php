@@ -1,0 +1,44 @@
+<?php
+
+namespace Modules\Admin\Http\Requests\Accounting\BatchCheck;
+
+use Illuminate\Foundation\Http\FormRequest;
+
+class BatchDocuVaultCheckShowOrders extends FormRequest
+{
+    /**
+     * Get the validation rules that apply to the request.
+     *
+     * @return array
+     */
+    public function rules()
+    {
+        return [
+            'date_from' => 'required',
+            'date_to' => 'required',
+            'clients' => 'nullable|array',
+            'ordertype' => 'required',
+        ];
+    }
+
+    /**
+     * Determine if the user is authorized to make this request.
+     *
+     * @return bool
+     */
+    public function authorize()
+    {
+        return true;
+    }
+
+    /** {@inheritdoc} */
+    public function messages()
+    {
+        return [
+            'date_from.required'       => 'The Date From field is required',
+            'date_to.required'       => 'The Date To field is required',
+            'ordertype.required'       => 'The Type field is required',
+        ];
+    }
+    
+}
